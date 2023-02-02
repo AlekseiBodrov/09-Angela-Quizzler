@@ -1,0 +1,6 @@
+framework module Pods_09_Angela_Quizzler {
+  umbrella header "Pods-09-Angela-Quizzler-umbrella.h"
+
+  export *
+  module * { export * }
+}

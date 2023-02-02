@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A51E1AC7E41B522B8910AEA7 /* Pods_09_Angela_Quizzler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E2C4AE3FA86EF396A8AEE50 /* Pods_09_Angela_Quizzler.framework */; };
+		D7814664298BE0CA002B3C6E /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7814663298BE0CA002B3C6E /* Question.swift */; };
+		D7814666298BE0E7002B3C6E /* QuizBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7814665298BE0E6002B3C6E /* QuizBrain.swift */; };
 		D7CF874C2988401D00440708 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CF874B2988401D00440708 /* AppDelegate.swift */; };
 		D7CF874E2988401D00440708 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CF874D2988401D00440708 /* SceneDelegate.swift */; };
 		D7CF87502988401D00440708 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CF874F2988401D00440708 /* ViewController.swift */; };
@@ -16,6 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E2C4AE3FA86EF396A8AEE50 /* Pods_09_Angela_Quizzler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_09_Angela_Quizzler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6073731AEE8EAF2B6FB2801E /* Pods-09-Angela-Quizzler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-09-Angela-Quizzler.release.xcconfig"; path = "Target Support Files/Pods-09-Angela-Quizzler/Pods-09-Angela-Quizzler.release.xcconfig"; sourceTree = "<group>"; };
+		9CC10330E820EF2048CED78F /* Pods-09-Angela-Quizzler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-09-Angela-Quizzler.debug.xcconfig"; path = "Target Support Files/Pods-09-Angela-Quizzler/Pods-09-Angela-Quizzler.debug.xcconfig"; sourceTree = "<group>"; };
+		D7814663298BE0CA002B3C6E /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		D7814665298BE0E6002B3C6E /* QuizBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizBrain.swift; sourceTree = "<group>"; };
 		D7CF87482988401D00440708 /* 09-Angela-Quizzler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "09-Angela-Quizzler.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7CF874B2988401D00440708 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7CF874D2988401D00440708 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +39,88 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A51E1AC7E41B522B8910AEA7 /* Pods_09_Angela_Quizzler.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		58B6C9C5C516F81A46D54EEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E2C4AE3FA86EF396A8AEE50 /* Pods_09_Angela_Quizzler.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D53809BE51FF1EA2831039DD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9CC10330E820EF2048CED78F /* Pods-09-Angela-Quizzler.debug.xcconfig */,
+				6073731AEE8EAF2B6FB2801E /* Pods-09-Angela-Quizzler.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D781465D298BDDB2002B3C6E /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				D7CF874B2988401D00440708 /* AppDelegate.swift */,
+				D7CF874D2988401D00440708 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		D781465E298BDDC5002B3C6E /* SupportingFile */ = {
+			isa = PBXGroup;
+			children = (
+				D7CF87512988401D00440708 /* Main.storyboard */,
+				D7CF87542988402100440708 /* Assets.xcassets */,
+				D7CF87562988402100440708 /* LaunchScreen.storyboard */,
+				D7CF87592988402100440708 /* Info.plist */,
+			);
+			path = SupportingFile;
+			sourceTree = "<group>";
+		};
+		D781465F298BDE0B002B3C6E /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		D7814660298BDE1C002B3C6E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D7814663298BE0CA002B3C6E /* Question.swift */,
+				D7814665298BE0E6002B3C6E /* QuizBrain.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D7814661298BDE27002B3C6E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D7814662298BDE41002B3C6E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D7CF874F2988401D00440708 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		D7CF873F2988401C00440708 = {
 			isa = PBXGroup;
 			children = (
 				D7CF874A2988401D00440708 /* 09-Angela-Quizzler */,
 				D7CF87492988401D00440708 /* Products */,
+				D53809BE51FF1EA2831039DD /* Pods */,
+				58B6C9C5C516F81A46D54EEA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,13 +135,12 @@
 		D7CF874A2988401D00440708 /* 09-Angela-Quizzler */ = {
 			isa = PBXGroup;
 			children = (
-				D7CF874B2988401D00440708 /* AppDelegate.swift */,
-				D7CF874D2988401D00440708 /* SceneDelegate.swift */,
-				D7CF874F2988401D00440708 /* ViewController.swift */,
-				D7CF87512988401D00440708 /* Main.storyboard */,
-				D7CF87542988402100440708 /* Assets.xcassets */,
-				D7CF87562988402100440708 /* LaunchScreen.storyboard */,
-				D7CF87592988402100440708 /* Info.plist */,
+				D7814662298BDE41002B3C6E /* Controller */,
+				D7814661298BDE27002B3C6E /* View */,
+				D7814660298BDE1C002B3C6E /* Model */,
+				D781465F298BDE0B002B3C6E /* Resource */,
+				D781465E298BDDC5002B3C6E /* SupportingFile */,
+				D781465D298BDDB2002B3C6E /* Application */,
 			);
 			path = "09-Angela-Quizzler";
 			sourceTree = "<group>";
@@ -74,6 +152,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D7CF875C2988402100440708 /* Build configuration list for PBXNativeTarget "09-Angela-Quizzler" */;
 			buildPhases = (
+				D7CF875F298985E100440708 /* ShellScript */,
+				FC90F3A9018C79E9BC0BCB21 /* [CP] Check Pods Manifest.lock */,
 				D7CF87442988401D00440708 /* Sources */,
 				D7CF87452988401D00440708 /* Frameworks */,
 				D7CF87462988401D00440708 /* Resources */,
@@ -133,12 +213,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D7CF875F298985E100440708 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint\n";
+		};
+		FC90F3A9018C79E9BC0BCB21 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-09-Angela-Quizzler-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D7CF87442988401D00440708 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7814666298BE0E7002B3C6E /* QuizBrain.swift in Sources */,
 				D7CF87502988401D00440708 /* ViewController.swift in Sources */,
+				D7814664298BE0CA002B3C6E /* Question.swift in Sources */,
 				D7CF874C2988401D00440708 /* AppDelegate.swift in Sources */,
 				D7CF874E2988401D00440708 /* SceneDelegate.swift in Sources */,
 			);
@@ -282,6 +406,7 @@
 		};
 		D7CF875D2988402100440708 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CC10330E820EF2048CED78F /* Pods-09-Angela-Quizzler.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -289,7 +414,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q6CQH2T6SR;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "09-Angela-Quizzler/Info.plist";
+				INFOPLIST_FILE = "09-Angela-Quizzler/SupportingFiles/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -310,6 +435,7 @@
 		};
 		D7CF875E2988402100440708 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6073731AEE8EAF2B6FB2801E /* Pods-09-Angela-Quizzler.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -317,7 +443,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q6CQH2T6SR;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "09-Angela-Quizzler/Info.plist";
+				INFOPLIST_FILE = "09-Angela-Quizzler/SupportingFiles/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
